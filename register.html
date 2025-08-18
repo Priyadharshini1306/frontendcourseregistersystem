@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Course Regisstration system</title>
+        <style>
+            body {
+                background-color: plum;
+                text-align: center;
+                margin-top: 10%;
+            }
+            input, select, button {
+                width: 250px;
+                padding: 5px;
+                border-radius: 3px;
+                margin: 10px;
+            }
+            
+            button{
+                background-color: gray;
+                colour: white;
+            }
+            button:hover {
+                background-color: rgb(70, 66, 66);
+            }
+            lable {
+                
+            }
+             
+        </style>
+    </head>
+    <body>
+        <h1 style="color: rgb(76, 74, 74);">Building Skills for a Brighter Future</h1>
+        <form action="http://localhost:8080/courses/register" method="post">
+            <label for="name"><h3>Enter your Name :</h3></label><br>
+            <input type="text" name="name"> <br>
+            <label for="emailId"><h3>Enter your emailId : </h3></label><br>
+            <input type="email" name="emailId" ><br>
+            <lable for="courseName"><h3>Choose a course</h3></lable><br>
+            <select id="course" name="courseName">
+                <option value="java">Java</option>
+                <option value="python">python</option>
+                <option value="springboot">SpringBoot</option>
+                <option value="c and c++">C and C++</option>
+                <option value="react">React</option>
+                <option value="java Script">Java Script</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </body>
+</html>
